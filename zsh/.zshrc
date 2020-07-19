@@ -1,11 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/opt/gradle/gradle-6.4.1/bin
+export AWS_ACCOUNT_ID=103412027062
+export AWS_REGION=cn-northwest-1
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/xiangyang/.oh-my-zsh
-
-
-export EDITOR=/usr/bin/vi
+export ZSH=/Users/lixiangyang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -63,7 +63,7 @@ ZSH_THEME="my-theme"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
+ zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,6 +97,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
+alias kl="kubectl"
+
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/lixiangyang/.sdkman"
+[[ -s "/Users/lixiangyang/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/lixiangyang/.sdkman/bin/sdkman-init.sh"
 
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
