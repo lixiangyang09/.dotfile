@@ -24,7 +24,7 @@ sudo chsh -s /bin/zsh
 
 git clone git@github.com:lixiangyang09/.dotfile.git
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 cp .dotfile/zsh/.zshrc ~
 cp .dotfile/zsh/my-theme.zsh-theme ~/.oh-my-zsh/themes
